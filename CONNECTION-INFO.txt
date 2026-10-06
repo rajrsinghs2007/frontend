@@ -1,0 +1,14 @@
+AUCTION Frontend → Render Backend
+
+Backend API:
+https://auction-backend-x97o.onrender.com
+
+The frontend config.js is set to this backend URL.
+
+Important for authentication from Vercel:
+In Render, set FRONTEND_URL to your exact Vercel production origin, for example:
+https://your-project.vercel.app
+
+Do not add a trailing slash. If you use a custom domain, set FRONTEND_URL to that exact https:// origin.
+
+The frontend uses credentials: include so the backend HTTP-only authentication cookie can be used.
